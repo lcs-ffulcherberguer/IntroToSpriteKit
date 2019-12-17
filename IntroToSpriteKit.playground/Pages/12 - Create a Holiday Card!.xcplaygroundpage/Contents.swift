@@ -31,6 +31,16 @@ view.presentScene(scene)
 // Show the view in the live view area
 PlaygroundSupport.PlaygroundPage.current.liveView = view
 
+//Add Merry Christmas
+let merryChristmas1 = SKSpriteNode(imageNamed: "merry-Christmas")
+merryChristmas1.position = CGPoint(x: 200 , y: 290)
+let actionScaleDown = SKAction.scale(by: 0.15, duration: 0)
+merryChristmas1.run(actionScaleDown)
+let actionMoveDown = SKAction.moveBy(x: 0, y: -200, duration: 5)
+scene.addChild(merryChristmas1)
+merryChristmas1.run(actionMoveDown)
+
+
 /*:
 ### Useful Resources
 

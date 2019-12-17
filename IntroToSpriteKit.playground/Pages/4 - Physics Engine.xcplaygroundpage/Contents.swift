@@ -76,10 +76,10 @@ for i in 1...3 {
  
  */
 //// Add a physics body for the hill
-//hill.physicsBody = SKPhysicsBody(texture: hill.texture!,
-//                                 alphaThreshold: 0.5,
-//                                 size: hill.size)
-//hill.physicsBody?.isDynamic = false // Hill will not move (not impacted by physics)
+hill.physicsBody = SKPhysicsBody(texture: hill.texture!,
+                                alphaThreshold: 0.5
+                                size: hill.size)
+hill.physicsBody?.isDynamic = false // Hill will not move (not impacted by physics)
 
 //// Add a physics body for the boulder
 //boulder.physicsBody = SKPhysicsBody(circleOfRadius: boulder.size.width * 0.5)
